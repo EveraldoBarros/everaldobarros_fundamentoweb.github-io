@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Everaldo Barros</title>
-  <!-- Caminho atualizado para o CSS -->
-  <link rel="stylesheet" href="./css/styles.css">
+  <title>Everaldo Barros - Portfólio</title>
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -14,31 +13,53 @@
     <h1>Everaldo Barros</h1>
     <nav>
       <ul>
-        <li><a href="./html/sobre.html">Sobre Mim</a></li>
-        <li><a href="./html/formacao.html">Formação</a></li>
-        <li><a href="./html/portfolio.html">Portfólio</a></li>
-        <li><a href="./html/contato.html">Contato</a></li>
+        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <aside id="bio">
-      <h2>Sobre Everaldo Barros</h2>
-      <!-- Caminho atualizado para a imagem -->
-      <img src="./image/foto.png" alt="Foto de Everaldo Barros">
-      <p>Olá, meu nome é Everaldo Barros e sou Analista de Sistemas e Quality Assurance Engineer.</p>
-      <p>Seja bem-vindo ao meu portfólio!</p>
-      <ul>
-        <li>Email: <a href="mailto:everaldobarros2023@outlook.com">everaldobarros2023@outlook.com</a></li>
-      </ul>
-    </aside>
+    <section class="row">
+      <!-- Sobre Mim -->
+      <div class="column">
+        <h2>Sobre Everaldo Barros</h2>
+        <img src="../image/foto.png" alt="Foto de Everaldo Barros" class="profile-pic">
+        <p>Olá, meu nome é Everaldo Barros e sou Analista de Sistemas e Quality Assurance Engineer.</p>
+        <p>Seja bem-vindo ao meu portfólio!</p>
+        <p>Email: <a href="mailto:everaldobarros2023@outlook.com">everaldobarros2023@outlook.com</a></p>
+      </div>
 
-    <section id="sobre">
-      <h2>Resumo Profissional</h2>
-      <p>Sou engenheiro de qualidade de software, crio cenários de testes manuais e automatizados, e realizo testes e2e
-        tanto no front-end quanto no back-end. Sou apaixonado por tecnologia e estudo todos os dias para evoluir minhas
-        habilidades.</p>
+      <!-- Resumo Profissional -->
+      <div class="column">
+        <h2>Resumo Profissional</h2>
+        <p>Sou engenheiro de qualidade de software, crio cenários de testes manuais e automatizados. Realizo testes e2e tanto no front-end quanto no back-end.</p>
+        <p>Sou apaixonado por tecnologia e estudo todos os dias para evoluir minhas habilidades.</p>
+      </div>
+
+      <!-- Conhecimentos -->
+      <div class="column">
+        <h2>Meus Conhecimentos</h2>
+        <h3>Linguagens de Programação</h3>
+        <ul>
+          <li>JavaScript</li>
+          <li>C#</li>
+          <li>Python</li>
+          <li>SQL</li>
+        </ul>
+        <h3>Ferramentas de Automação</h3>
+        <ul>
+          <li>Cypress</li>
+          <li>Robot Framework</li>
+          <li>VS Code</li>
+        </ul>
+        <h3>Ferramentas de Teste de API</h3>
+        <ul>
+          <li>Postman</li>
+        </ul>
+      </div>
     </section>
   </main>
 
