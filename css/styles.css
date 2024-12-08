@@ -1,14 +1,14 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #fafafa;
-  color: #333;
+  color: #333333;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: aqua;
+  color: black;
   padding: 20px;
   text-align: center;
 }
@@ -27,7 +27,7 @@ nav ul {
 }
 
 nav a {
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 
@@ -35,35 +35,98 @@ main {
   padding: 20px;
 }
 
-main img {
+main h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.foto-perfil {
   display: block;
-  max-width: 150px;
-  margin: 0 auto 20px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image_tec-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-right: 10px;
+}
+
+.image_tec-container img {
+  width: 600px;
+  height: 450px;
+  object-fit: cover;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para listas */
+ul li {
+  margin-bottom: 15px; /* Espaçamento entre itens das listas */
+}
+
+/* Estilo para parágrafos */
+section p {
+  margin-bottom: 20px; /* Espaçamento entre os parágrafos */
+}
+
+/* Estilos para o formulário */
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-container textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.form-container button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: aqua;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #008cba;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: aqua;
+  color: black;
   text-align: center;
   padding: 10px;
   position: fixed;
   width: 100%;
   bottom: 0;
-}
-.sobre-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.foto-perfil {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-}
-
-.texto-sobre {
-  max-width: 600px;
 }
